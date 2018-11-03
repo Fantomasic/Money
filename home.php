@@ -9,3 +9,5 @@ $client->load($_SESSION['id']);
 $friend=$client->ref('Friends');
 $crud=$app->add('Crud');
 $crud->setModel($friend,['name','phone','email']);
+$crud->addDecorator('name',new \atk4\ui\TableColumn\Link('loan.php?friends_id=($id}'));
+$crud->setModel (new Friends($db));
