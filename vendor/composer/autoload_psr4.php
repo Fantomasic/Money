@@ -7,18 +7,8 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'atk4\\ui\\' => array($vendorDir . '/atk4/ui/src'),
-    'atk4\\mastercrud\\' => array($vendorDir . '/atk4/mastercrud/src'),
-    'atk4\\filestore\\' => array($vendorDir . '/atk4/filestore/src'),
     'atk4\\dsql\\' => array($vendorDir . '/atk4/dsql/src'),
     'atk4\\data\\' => array($vendorDir . '/atk4/data/src'),
     'atk4\\core\\' => array($vendorDir . '/atk4/core/src'),
-    'Spatie\\FlysystemDropbox\\' => array($vendorDir . '/spatie/flysystem-dropbox/src'),
-    'Spatie\\Dropbox\\' => array($vendorDir . '/spatie/dropbox-api/src'),
     'Psr\\Log\\' => array($vendorDir . '/psr/log/Psr/Log'),
-    'Psr\\Http\\Message\\' => array($vendorDir . '/psr/http-message/src'),
-    'League\\Flysystem\\' => array($vendorDir . '/league/flysystem/src'),
-    'GuzzleHttp\\Psr7\\' => array($vendorDir . '/guzzlehttp/psr7/src'),
-    'GuzzleHttp\\Promise\\' => array($vendorDir . '/guzzlehttp/promises/src'),
-    'GuzzleHttp\\' => array($vendorDir . '/guzzlehttp/guzzle/src'),
-    '' => array($baseDir . '/src'),
 );

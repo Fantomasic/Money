@@ -1,11 +1,14 @@
 <?php
 session_start();
-require 'vendor/autoload.php';
 require 'connection.php';
 $app = new \atk4\ui\App('Money');
 $app->initLayout('Centered');
 $form=$app->add('Form');
 $form->setModel(new Client($db));
 $form->buttonSave->set('Create an account');
+$form->onSubmit(function($form) {
+  $form->model->save();
+ return $form->success('Record updated');
+});
 $button=$app->add(['Button','Back']);
 $button->link(['index']);

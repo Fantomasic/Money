@@ -1,6 +1,6 @@
 <?php
 session_start();
-require 'vendor/autoload.php';
+//require_once 'vendor/autoload.php';
 require 'connection.php';
 $app = new \atk4\ui\App('Money');
 $app->initLayout('Centered');
@@ -13,15 +13,15 @@ $form->onSubmit(function($form) use($client){
 		if($client['password']==$form->model['password']){
 			$_SESSION['id']=$client->id;
 			return new \atk4\ui\jsExpression('document.location="home.php"');
-			
-			
+
+
 		}else{
 			$client->unload();
 			$er = new \atk4\ui\jsNotify('No such user.');
 			$er->setColor('red');
 			return $er;
-			
-			
+
+
 		}
 });
 $button=$app->add(['Button','Sign up','green']);
