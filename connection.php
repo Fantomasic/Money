@@ -16,7 +16,7 @@ public $table = 'friends_vlad28';
 function init() {
 parent::init();
 $this->addFields(['name','phone','email']);
-$this->hasOne('client_id',new Client)->addTitle();
+$this->hasOne('client_vlad28_id',new Client)->addTitle();
 $this->hasMany('Loan',new Loan)->addField('total_loan',['aggregate'=>'sum', 'field'=>'amount']);
 $this->hasMany('Refund',new Refund)->addField('total_refund', ['aggregate'=>'sum', 'field'=>'amount']);
 }
