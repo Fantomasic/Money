@@ -36,7 +36,7 @@ function init() {
 parent::init();
 $this->addField('amount',['type'=>'money']);
 $this->addField('date',['type'=>'date']);
-$this->hasOne('friends_id',new Friends)->addTitle();
+$this->hasOne('friends_vlad28_id',new Friends)->addTitle();
 }
 }
 class ReminderBox extends \atk4\ui\View {
